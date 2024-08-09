@@ -5,12 +5,12 @@ package quiz1sistemasg2;
 
 public class App {
     
-
     public static void main(String[] args) {
         
        
 
     }
+
 
     /*  Implemente una funcion llamada calcularValorHora que cumpla con las siguientes caracteristicas
         * Recibe: 
@@ -22,6 +22,52 @@ public class App {
     */
     //------------------------------------------------------------------
     
+    public static int calcularValorHora (int valorhoraspermanecidas, int nrodehoras) {
+        try{
+            
+            int calcularValorHora = valorhoraspermanecidas * nrodehoras;
+        
+            return calcularValorHora;
+        
+        } catch (exception e) {
+            return -1;
+        }
+    }
+
+    public static void main(String[] args) {
+        try{
+            
+            String carro = "C", moto = "M", bisicleta = "B";
+            int calcularValorHora = 0;
+            
+            int nroHorasTrabajadas = 0, valorHora = 0, porcentajeRetencion = 0;
+
+            //Datos de Salida
+            int valorboletas = 0;
+
+            //Proceso
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Ingrese la cantidad de horas: ");
+            nroHorasTrabajadas = sc.nextInt();
+            sc.nextLine();
+
+            System.out.println("Ingrese el valor de la Hora: $");
+            valorHora = sc.nextInt();
+            sc.nextLine();
+
+            System.out.println("Ingrese el valor de las horas extras:");
+            porcentajeRetencion = sc.nextInt();
+
+            
+            
+
+        
+       
+
+    }
+
+
 
 
     //------------------------------------------------------------------
